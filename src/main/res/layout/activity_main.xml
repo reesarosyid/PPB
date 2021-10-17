@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="408dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="0dp"
+        android:text="KALKULATOR"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/bil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Bilangan 1 : "
+        android:textSize="28sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/inputbil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/bil1"
+        android:ems="10"
+        android:inputType="number"
+        android:textColorHint="#473F3F"/>
+
+    <TextView
+        android:id="@+id/bil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bil1"
+        android:layout_marginTop="20dp"
+        android:text="Bilangan 2 : "
+        android:textSize="28sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/inputbil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputbil1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColorHint="#473F3F"/>
+
+    <Button
+        android:id="@+id/bkali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputbil2"
+        android:layout_marginTop="50dp"
+        android:text="x"
+        android:textSize="20sp"
+        android:backgroundTint="#0DE315" />
+
+    <Button
+        android:id="@+id/bbagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputbil2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/bkali"
+        android:text=":"
+        android:textSize="20sp"
+        android:backgroundTint="#0DE315" />
+
+    <Button
+        android:id="@+id/btambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputbil2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/bbagi"
+        android:text="+"
+        android:textSize="20sp"
+        android:backgroundTint="#0DE315" />
+
+    <Button
+        android:id="@+id/bkurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputbil2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/btambah"
+        android:text="-"
+        android:textSize="20sp"
+        android:backgroundTint="#0DE315" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bbagi"
+        android:layout_marginTop="30dp"
+        android:text="Hasil"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/hasilangka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hasil"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+</RelativeLayout>
